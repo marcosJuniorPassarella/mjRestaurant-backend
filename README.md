@@ -1,1 +1,1 @@
-### Backend em desenvolvimento utilizando Typescript - NodeJS - Prisma - PostgresSql
+### Backend em desenvolvimento utilizando Typescript - NodeJS - Prisma - PostgreSql
