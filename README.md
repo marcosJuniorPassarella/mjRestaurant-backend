@@ -3,6 +3,7 @@
 #### Funcionalidades:
 
 ##### * Cadastar usuário - Logar usuário - Detalhes do usuário
+##### * Autenticação com token JWT
 ##### * Verificar autenticação para rotas privadas
 ##### * Criar e listar categorias
 ##### * Criar e listar produtos de uma categoria específica
