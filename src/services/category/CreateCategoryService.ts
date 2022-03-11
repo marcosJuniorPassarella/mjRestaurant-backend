@@ -9,7 +9,6 @@ class CreateCategoryService {
     if (name === "") {
       throw new Error("Nome inválido!");
     }
-
     const category = await prismaClient.category.create({
       data: {
         name: name,
@@ -19,9 +18,7 @@ class CreateCategoryService {
         name: true,
       },
     });
-
     return category;
   }
 }
-
 export { CreateCategoryService };

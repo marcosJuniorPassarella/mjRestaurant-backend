@@ -1,10 +1,5 @@
+import { ItemRequest } from "../../interfaces/ItemRequest";
 import prismaClient from "../../prisma/index";
-
-interface ItemRequest {
-  order_id: string;
-  product_id: string;
-  amount: number;
-}
 
 class AddItemService {
   async execute({ order_id, product_id, amount }: ItemRequest) {

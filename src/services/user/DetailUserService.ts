@@ -1,5 +1,4 @@
 import prismaClient from "../../prisma";
-
 class DetailUserService {
   async execute(user_id: string) {
     const user = await prismaClient.user.findFirst({
@@ -9,8 +8,8 @@ class DetailUserService {
       select: {
         id: true,
         name: true,
-        email: true
-      }
+        email: true,
+      },
     });
 
     return user;

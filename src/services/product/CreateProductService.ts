@@ -1,13 +1,5 @@
 import prismaClient from "../../prisma";
-
-interface ProductRequest {
-  name: string;
-  price: string;
-  description: string;
-  banner: string;
-  category_id: string;
-}
-
+import { ProductRequest } from "../../interfaces/ProductRequest";
 class CreateProductService {
   async execute({
     name,
@@ -25,9 +17,7 @@ class CreateProductService {
         category_id: category_id,
       },
     });
-
     return product;
   }
 }
-
 export { CreateProductService };

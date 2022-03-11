@@ -10,7 +10,6 @@ class CreateProductController {
       throw new Error("Erro ao enviar imagem");
     } else {
       const { originalname, filename: banner } = req.file;
-
       const product = await createProductService.execute({
         name,
         price,

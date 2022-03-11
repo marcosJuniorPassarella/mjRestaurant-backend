@@ -8,7 +8,6 @@ class ListCategoryService {
         name: true,
       },
     });
-
     return categories;
   }
 }

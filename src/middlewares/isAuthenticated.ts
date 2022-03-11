@@ -16,9 +16,8 @@ export function isAuthenticated(
   if (!authToken) {
     return res.status(401).end();
   }
-
   const [, token] = authToken.split(" ");
-
+  
   try {
     // VALIDANDO O TOKEN
     const { sub } = verify(token, process.env.JWT_SECRET) as Payload;
